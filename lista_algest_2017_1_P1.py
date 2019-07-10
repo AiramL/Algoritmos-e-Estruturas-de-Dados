@@ -57,7 +57,7 @@ def contar_diamantes(entrada):
     return contador_total    
 
 
-def obter_funcao_tempo(numero_questao, inicial=0, quantidade_testes=1000):
+def obter_funcao_tempo(numero_questao=1, inicial=0, quantidade_testes=100000):
     resultado_i =[]
     resultado_t =[]
     if (numero_questao == 1):
@@ -67,7 +67,7 @@ def obter_funcao_tempo(numero_questao, inicial=0, quantidade_testes=1000):
             t = time.time()-t1
             resultado_i+= [i]
             resultado_t+= [t]
-        matplotlib.pyplot.plot(resultado_i,resultado_t,'r--')
+        matplotlib.pyplot.plot(resultado_i,resultado_t,'o')
         matplotlib.pyplot.ylabel('Tempo (s)')
         matplotlib.pyplot.xlabel('Entrada')
         matplotlib.pyplot.show()
@@ -85,27 +85,8 @@ def obter_funcao_tempo(numero_questao, inicial=0, quantidade_testes=1000):
         matplotlib.pyplot.plot(resultado_i,resultado_t, 'o')
         matplotlib.pyplot.show()
 
-'''
-q = 4000
-def obter_funcao_tempo():
-    resultado_i =[]
-    resultado_t =[]
-    
-    for i in range(q):
-            t1 = time.time()
-            x = contar_chamadas(i)
-            t = time.time()-t1
-            resultado_i+= [i]
-            resultado_t+= [t]
-    matplotlib.pyplot.plot(resultado_i,resultado_t, 'k')
 
-    for i in range(q):
-        t1 = time.time()
-        x = fatorar_fatoriais(i)
-        t = time.time()-t1
-        resultado_i+= [i]
-        resultado_t+= [t]
-    
-    matplotlib.pyplot.plot(resultado_i,resultado_t, 'r--')
-    matplotlib.pyplot.show()
-'''
+
+if __name__ == "__main__":
+    obter_funcao_tempo()
+    obter_funcao_tempo(2)

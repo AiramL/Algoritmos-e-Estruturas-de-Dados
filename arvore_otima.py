@@ -69,41 +69,8 @@ def encontrar_arvore_otima(frequencia_j,frequencia_j_linha):
     print "\n\t\tMatriz K"
     printar_matriz(K)
     return K
-
-'''
-def printar_arvore_exercicio_casa(raiz_matriz):
-    i = 8
-    tab = i*'\t'
-    print tab+'              '+str(raiz_matriz[0][8])+'\n'
-    print tab+"\t  /       \\"
-    i = 8
-    tab = i*'\t'   
-    print tab+'       '+str(raiz_matriz[0][1])+'\t     '+str(raiz_matriz[2][8])+'\n'
-    print tab+"    /     \\        /     \\"
-    i = 8
-    tab = i*'\t'
-    print tab+'   r0'+'     '+'r1'+'    '+'r2'+'         '+str(raiz_matriz[3][8])+'\n'
-    print tab+"\t\t       /       \\"
-    i = 10
-    tab = i*'\t'    
-    print tab+'    '+str(raiz_matriz[3][5])+'            '+str(raiz_matriz[6][8])+'\n'
-    print tab+" /     \\      /     \\"
-    i = 9
-    tab = i*'\t'
-    print tab+'        r3'+'      '+str(raiz_matriz[4][5])+'    '+'r4'+'      '+str(raiz_matriz[7][8])+'\n'
-    print tab+"\t     /     \\      /     \\"
-    i = 10
-    tab = i*'\t'
-    print tab+'    r5'+'   '+'  r6'+'    '+'r7'+'   '+'  r8'+'\n'
-'''    
     
 
 
 if (__name__ == '__main__'):
-    #print "\n\n Exercicio Aula (Slide 173)\n\n"
-    encontrar_arvore_otima([0,30,5,10,0,5,30,40],[10,10,5,10,5,0,5,0])
-    #print "\n\n Exercicio Para Casa \n\n"
-    #K = encontrar_arvore_otima([0,10,20,10,1,2,5,2,0],[2,5,5,5,1,1,1,1,1,1])
-    #print '\n\n\n'
-    #print "\t\t\t\t\t\t\t\t  Arvore exercicio para casa\n\n\n"
-    #printar_arvore_exercicio_casa(K)
+    encontrar_arvore_otima([0,20,30,15,15,10,5,2,1],[1,1,1,1,1,1,1,1,1])
