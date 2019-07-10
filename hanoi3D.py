@@ -1,3 +1,16 @@
+################################################################
+#                                                              #
+#   Lucas Airam Castro de Souza                                #
+#   Gabriel Monteiro de Castro Xará Wanderley                  #
+#                                                              #
+#   Universidade Federal do Rio de Janeiro                     #
+#   Algoritmos e Estruturas de Dados                           #
+#                                                              #
+################################################################
+
+
+
+
 import pygame
 from pygame.locals import *
 from OpenGL.GL import *
